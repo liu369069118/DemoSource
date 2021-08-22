@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Login'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of Login.'
 
 # This description is used to generate tags and improve search results.
@@ -33,6 +33,8 @@ TODO: Add long description of the pod here.
   if ENV['SOURCECODE']
     s.source_files = 'Login/Classes/**/*'
   else
+    s.source_files = 'Login/Classes/LoginManager.swift'
+    s.public_header_files = 'Login/Classes/LoginManager.swift'
     s.ios.vendored_libraries = 'LoginSDK/*.a'
   end
   
