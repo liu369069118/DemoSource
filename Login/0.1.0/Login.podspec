@@ -33,6 +33,8 @@ TODO: Add long description of the pod here.
   if ENV['SOURCECODE']
     s.source_files = 'Login/Classes/**/*'
   else
+    s.source_files = 'Login/Classes/LoginManager.swift'
+    s.public_header_files = 'Login/Classes/LoginManager.swift'
     s.ios.vendored_libraries = 'LoginSDK/*.a'
   end
   
